@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ff8c19</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Loginas">#e8391a</color>
+    <color name="Register">#5507f0</color>
+    <color name="Logout">#f4f4c8</color>
+</resources>

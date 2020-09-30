@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/Logout"
+    android:orientation="vertical"
+    tools:context=".SearchActivity">
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/maistas"
+        android:textSize="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+    <CheckBox
+        android:id="@+id/pirmas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pirmas" />
+
+    <CheckBox
+        android:id="@+id/antras"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/antras" />
+
+    <CheckBox
+        android:id="@+id/trecias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/trecias" />
+
+    <CheckBox
+        android:id="@+id/ketvirtas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/ketvirtas" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/pristatymas"
+        android:textSize="20dp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <RadioGroup
+        android:id="@+id/new_entry_delivery_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <RadioButton
+            android:id="@+id/deliveryyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/taip" />
+
+        <RadioButton
+            android:id="@+id/deliveryno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="false"
+            android:text="@string/ne" />
+    </RadioGroup>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/kaina"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/kaina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/kaina"
+        android:inputType="text" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/atsiskaitymas"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/atsiskaitymas_list"
+        android:prompt="@string/atsiskaitymas" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-black"
+        android:text="@string/kates"
+        android:textSize="20dp" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/kaciulist"
+        android:prompt="@string/kates" />
+
+    <Button
+        android:id="@+id/createbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:background="@color/Loginas"
+        android:text="@string/prideti" />
+
+</LinearLayout>

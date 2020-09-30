@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">OctopopsCat</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
+    <string name="register_login">Username</string>
+    <string name="register_password">Password</string>
+    <string name="register_email">Email</string>
+    <string name="button_login">Login</string>
+    <string name="button_register">Register</string>
+    <string name="checkbox">Remember Me</string>
+    <string name="screenlog">Your Login Credentials</string>
+    <string name="logout">Logout</string>
+    <string name="exit">Exit</string>
+    <string name="registergreet">Your Registration Form</string>
+    <string name="login_invalid_credentials_message">login_invalid_credentials_message</string>
+    <string name="register_invalid">Patikrinkite Laukus</string>
+    <string name="maistas">Kaciu Maistas</string>
+    <string name="pirmas">Aatas Cat Creamy Chicken andTuna 80 g</string>
+    <string name="antras">Applaws konservai katėms su tunu ir krabais, 70g</string>
+    <string name="trecias">Aatu natūralus maistas katėms su vištiena, 1 kg</string>
+    <string name="ketvirtas">Applaws sausas kačių maistas su žuvimi ir lašiša, 6 kg</string>
+    <string name="pristatymas">Pristatymas</string>
+    <string name="taip">Taip</string>
+    <string name="ne">Ne</string>
+    <string name="kaina">Kaina</string>
+    <string name="kates">Pasirinkite Kates Veisle</string>
+    <string-array name="kaciulist">
+        <item>Siamo kate</item>
+        <item>Sfinkso kate</item>
+        <item>Persu kate</item>
+        <item>Bengalijos kate</item>
+    </string-array>
+    <string name="prideti">Prideti</string>
+    <string name="atsiskaitymas">Pasirinkite Atsiskaitymo Buda</string>
+    <string-array name="atsiskaitymas_list">
+        <item>Vietoje</item>
+        <item>Banku</item>
+        <item>PayPal</item>
+        <item>Pastu</item>
+    </string-array>
+
+
+</resources>
