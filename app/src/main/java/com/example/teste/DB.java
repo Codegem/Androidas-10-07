@@ -14,7 +14,7 @@ import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 
-public class database {
+public class DB {
     public String sendPostRequest(String requestURL,
                                   HashMap<String, String> postDataParams) {
         URL url;

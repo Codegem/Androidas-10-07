@@ -24,6 +24,7 @@
     <string name="ne">Ne</string>
     <string name="kaina">Kaina</string>
     <string name="kates">Pasirinkite Kates Veisle</string>
+    <string name="new_entry_database_info">Siunciam Duomenis</string>
     <string-array name="kaciulist">
         <item>Siamo kate</item>
         <item>Sfinkso kate</item>
