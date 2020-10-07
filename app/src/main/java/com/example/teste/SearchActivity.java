@@ -19,7 +19,7 @@ import java.util.HashMap;
 
 public class SearchActivity extends AppCompatActivity {
 
-    private static final String INSERT_URL = "http://androidoapsas.epizy.com/mobile/dbconnect.php";
+    private static final String INSERT_URL = "http://androidoapsas.epizy.com/";
 
 
     @Override
@@ -65,9 +65,9 @@ public class SearchActivity extends AppCompatActivity {
                 Kate kate = new Kate(kaciumaistas, selectedDeliveryTypeBtnName, kaina, payment, rusis );
                 databaseInsert(kate);
                 Toast.makeText(SearchActivity.this,
-                "KaciuMaistas" + kate.getKaciumaistas() + "\n" +
+                "kaciumaistas" + kate.getKaciumaistas() + "\n" +
                         "pristatymas" + kate.getPristatymas() + "\n" +
-                          "kaina" + kate.getKaina() + "\n" +
+                          "KAINA" + kate.getKaina() + "\n" +
                                "pristatymnas" + kate.getPristatymas() + "\n" +
                                   "Veisle" + kate.getVeisle() + "\n",
                 Toast.LENGTH_SHORT).show();

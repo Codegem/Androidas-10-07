@@ -12,7 +12,7 @@ import java.util.HashMap;
 
 public class NewActivity extends AppCompatActivity {
 
-    private static final String INSERT_URL = "http://androidoapsas.epizy.com/mobile/dbconnect.php";
+    private static final String INSERT_URL = "http://androidoapsas.epizy.com/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
