@@ -2,16 +2,20 @@ package com.example.teste;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import java.util.HashMap;
+
 public class RegisterActivity extends AppCompatActivity {
 
-
+    private static final String INSERT_URL = "http://androidoapsas.epizy.com/register.php/";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,5 +63,51 @@ public class RegisterActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    private void databaseInsert(Regist regist) {
+        class NewEntry extends AsyncTask<String, Void, String> {
+
+            ProgressDialog loading;
+            DB db = new DB();
+
+            //            @Override
+            protected void onPreExecuted() {
+                super.onPreExecute();
+                loading = ProgressDialog.show(RegisterActivity.this,
+                        getResources().getString(R.string.new_entry_database_info),
+                        null, true, true);
+            }
+
+            @Override
+            protected String doInBackground(String... strings) {
+                HashMap<String, String> regist = new HashMap<String, String>();
+                regist.put("regusername", strings[0]);
+                regist.put("regpassword", strings[1]);
+                regist.put("regemail", strings[2]);
+                regist.put("action", "insert");
+
+                String registras = db.sendPostRequest(INSERT_URL, regist);
+
+                return registras;
+            }
+
+            @Override
+            protected void onPostExecute(String s) {
+                super.onPostExecute(s);
+                Toast.makeText(RegisterActivity.this, s,
+                        Toast.LENGTH_SHORT).show();
+                Intent gotoLoginActivity = new Intent(RegisterActivity.this,
+                        LoginActivity.class);
+                startActivity(gotoLoginActivity);
+            }
+
+        }
+        NewEntry newEntry = new NewEntry();
+        newEntry.execute(
+                regist.getRegusername(),
+                regist.getRegpassword(),
+                regist.getRegemaile()
+        );
     }
 }
